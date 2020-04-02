@@ -1,8 +1,8 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
-date: {{ .Date }}
-lastmod: {{ .Date }}
-draft: true
+title: "Impressum"
+date: 2020-04-02T22:14:39+02:00
+lastmod: 2020-04-02T22:14:39+02:00
+draft: false
 author: ""
 authorLink: ""
 description: ""

@@ -1,8 +1,8 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
-date: {{ .Date }}
-lastmod: {{ .Date }}
-draft: true
+title: "Über mich"
+date: 2020-04-02T22:10:24+02:00
+lastmod: 2020-04-02T22:10:24+02:00
+draft: false
 author: ""
 authorLink: ""
 description: ""
@@ -24,5 +24,5 @@ share:
   enable: true
 comment: true
 ---
-
+Tja, wer bin ich ;-)
 <!--more-->
