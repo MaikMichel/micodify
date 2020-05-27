@@ -236,9 +236,9 @@ numPosts = 10
 appId = ""
 languageCode = "en_US"
 
-[languages.dene.params.footer]
+[languages.en.params.footer]
 # license info (HTML format is allowed)
-license = '<a rel="license nofollow noopener noreffer" href="/impressum">Impressum</a>'
+license = '<a rel="license nofollow noopener noreffer" href="/impressum">Privacy and Policy</a>'
 
 
 [languages.de]
@@ -467,7 +467,7 @@ languageCode = "en_US"
 
 [languages.de.params.footer]
 # license info (HTML format is allowed)
-license = '<a rel="license nofollow noopener noreffer" href="/impressum">Impressum</a>'
+license = '<a rel="license nofollow noopener noreffer" href="/impressum">Impressum und Datenschutzerklärung</a>'
 
 
 [params]

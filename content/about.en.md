@@ -1,28 +1,25 @@
 ---
-title: "Über mich"
+title: "About me"
 date: 2020-04-02T22:10:24+02:00
 lastmod: 2020-04-02T22:10:24+02:00
 draft: false
-author: ""
-authorLink: ""
-description: ""
-license: ""
 
-tags: []
-categories: []
-hiddenFromHomePage: false
-
-featuredImage: ""
+featuredImage: "/images/about/about.me.jpg"
 featuredImagePreview: ""
 
-toc: false
-autoCollapseToc: true
-math: false
 lightgallery: true
-linkToMarkdown: true
-share:
-  enable: true
-comment: true
 ---
-Tja, wer bin ich ;-)
-<!--more-->
+
+![me with my son](/images/about/about.me.jpg "Me with my son")
+
+My name is **Maik Michel**. I live in Dorsten and am *42* years old. I am a software developer by passion and I made my hobby to my profession. For me there are always things which one makes better, things which one can optimize.
+
+Here in this blog I would like to share my thoughts and various tips on the topics I encounter in my professional and private life.
+
+* **Name**: Maik Michel
+* **Occupation**: Lead Developer / Consultant / Solution Architect
+* **Residence**: Dorsten (Northern Ruhr Area) - Germany
+* **Contact**: maik.michel@micodify.de
+* **Interests**: driving OneWeel, Agility, Movies, APEX, raspberry, SmartHome, barbecue
+* **Bid** enthusiasm, team leadership, empathy, project management, a lot of experience
+* **Stack**: Oracle APEX, JavaScript, CSS, Html, PL/SQL, DevOps
