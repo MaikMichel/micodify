@@ -24,8 +24,13 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
       
-    - name: Action Hugo
-      uses: kevvurs/action-hugo@v1.0-rc2
+    - name: Hugo setup
+      uses: peaceiris/actions-hugo@v2.4.12
+      with:
+        # The Hugo version to download (if necessary) and use. Example: 0.58.2
+        hugo-version: # optional, default is latest
+        # Download (if necessary) and use Hugo extended version. Example: true
+        extended: # optional, default is false
       
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.1.1
