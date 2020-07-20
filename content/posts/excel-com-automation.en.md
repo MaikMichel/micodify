@@ -1,5 +1,5 @@
 ---
-title: "Excel SaveAs via COM/OLE - Automation schlägt unter W2008 fehl"
+title: "Excel SaveAs via COM/OLE - Automation exception when using W2008"
 date: 2015-06-17T21:14:10+02:00
 lastmod: 2015-06-17T21:14:10+02:00
 draft: false

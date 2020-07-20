@@ -3,13 +3,10 @@ title: "Interactive Grid – Nur die aktuelle Zeile aktualisieren"
 date: 2018-01-27T22:02:37+02:00
 lastmod: 2018-01-27T22:02:37+02:00
 draft: false
-author: ""
-authorLink: ""
 description: ""
-license: ""
 
-tags: []
-categories: []
+tags: ["apex", "grid"]
+categories: ["APEX"]
 hiddenFromHomePage: false
 
 featuredImage: "/images/refresh-current-row-in-ig/Snap1.gif"

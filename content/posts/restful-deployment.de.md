@@ -3,13 +3,10 @@ title: "RESTful Deployment"
 date: 2018-02-12T22:40:53+02:00
 lastmod: 2018-02-12T22:40:53+02:00
 draft: false
-author: ""
-authorLink: ""
 description: ""
-license: ""
 
-tags: []
-categories: []
+tags: ["ords", "rest", "deployment"]
+categories: ["ORDS"]
 hiddenFromHomePage: false
 
 featuredImage: "/images/restful-deployment/ords_logo.png"

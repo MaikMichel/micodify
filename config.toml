@@ -1,6 +1,7 @@
-baseURL = "https://micodify.de/"
-# [en, zh-cn, fr, ...] determines default content language
+baseURL = "https://micodify.de"
+# [en, zh-cn, fr, pl, ...] determines default content language
 defaultContentLanguage = "en"
+# theme
 theme = "loveit"
 # whether to use robots.txt
 enableRobotsTXT = true
@@ -9,643 +10,775 @@ enableGitInfo = true
 # whether to use emoji code
 enableEmoji = true
 
+title = "micodify"
+
 [languages]
 
-[languages.en]
-# language code
-languageCode = "en"
-title = "micodify"
-languageName = "English"
-# whether to include Chinese/Japanese/Korean
-hasCJKLanguage = false
-# default amount of posts in each pages
-paginate = 12
-# [UA-XXXXXXXX-X] google analytics code
-googleAnalytics = ""
-# copyright description used only for seo schema
-copyright = "This work is licensed under MIT"
-# date format
-dateFormatToUse = "2006-01-02"
+  [languages.en]
 
-# Menu Info
-[languages.en.menu]
+    weight = 1
+    # language code
+    languageCode = "en"
+    # language name
+    languageName = "English"
+    # whether to include Chinese/Japanese/Korean
+    hasCJKLanguage = false
+    # default amount of posts in each pages
+    paginate = 12
+    # [UA-XXXXXXXX-X] google analytics code
+    googleAnalytics = "UA-115086311-1"
+    # copyright description used only for seo schema
+    copyright = "This work is licensed MIT."
+    # Menu config
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        # you can add extra information before the name (HTML format is supported), such as icons
+        pre = ""
+        # you can add extra information after the name (HTML format is supported), such as icons
+        post = ""
+        name = "Posts"
+        url = "/posts/"
+        # title will be shown when you hover on this menu link.
+        title = ""
+        weight = 1
+      [[languages.en.menu.main]]
+        identifier = "tags"
+        pre = ""
+        post = ""
+        name = "Tags"
+        url = "/tags/"
+        title = ""
+        weight = 2
+      [[languages.en.menu.main]]
+        identifier = "categories"
+        pre = ""
+        post = ""
+        name = "Categories"
+        url = "/categories/"
+        title = ""
+        weight = 3
+      [[languages.en.menu.main]]
+        identifier = "about"
+        pre = ""
+        post = ""
+        name = "About"
+        url = "/about/"
+        title = ""
+        weight = 4
+    [languages.en.params]
+      # site description
+      description = "micodify - developer blog about Oracle APEX, JavaScript and Tooling"
+      # site keywords
+      keywords = ["Blog", "Development", "APEX", "Oracle APEX", "JavaScript", "Tooling"]
+      # site default theme ("light", "dark", "auto")
+      defaultTheme = "auto"
 
-[[languages.en.menu.main]]
-identifier = "posts"
-# you can add extra information before the name (HTML format is allowed), such as icons
-pre = ""
-name = "Posts"
-url = "/posts/"
-# title will be shown when you hover on this menu link.
-title = ""
-weight = 1
+      # App icon config
+      [languages.en.params.app]
+        # optional site title override for the app when added to an iOS home screen or Android launcher
+        title = "micodify"
+        # whether to omit favicon resource links
+        noFavicon = false
+        # modern SVG favicon to use in place of older style .png and .ico files
+        svgFavicon = ""
+        # Android browser theme color
+        themeColor = "#ffffff"
+        # Safari mask icon color
+        iconColor = "#5bbad5"
+        # Windows v8-10 tile color
+        tileColor = "#da532c"
+      # Search config
+      [languages.en.params.search]
+        enable = true
+        # type of search engine ("lunr", "algolia")
+        type = "algolia"
+        # max index length of the chunked content
+        contentLength = 4000
+        # placeholder of the search bar
+        placeholder = ""
+        # max number of results length
+        maxResultLength = 10
+        # snippet length of the result
+        snippetLength = 30
+        # HTML tag name of the highlight part in results
+        highlightTag = "em"
+        # whether to use the absolute URL based on the baseURL in search index
+        absoluteURL = false
+        [languages.en.params.search.algolia]
+          index = "index.en"
+          appID = "PASDMWALPK"
+          searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+      # Home page config
+      [languages.en.params.home]
+        # amount of RSS pages
+        rss = 10
+        # Home page profile
+        [languages.en.params.home.profile]
+          enable = true
+          # Gravatar Email for preferred avatar in home page
+          gravatarEmail = ""
+          # URL of avatar shown in home page
+          avatarURL = "/images/avatar2.png"
+          # title shown in home page (HTML format is supported)
+          title = "micodify"
+          # subtitle shown in home page
+          subtitle = "micodify - developer blog about Oracle APEX, JavaScript and more"
+          # whether to use typeit animation for subtitle
+          typeit = true
+          # whether to show social links
+          social = true
+          # disclaimer (HTML format is supported)
+          disclaimer = ""
+        # Home page posts
+        [languages.en.params.home.posts]
+          enable = true
+          # special amount of posts in each home posts page
+          paginate = 6
+      # Social config in home page
+      [languages.en.params.social]
+        GitHub = "MaikMichel"
+        Linkedin = "maik-michel"
+        Twitter = "Maik__Michel"
+        Instagram = ""
+        Facebook = ""
+        Telegram = "MaikMichel"
+        Medium = ""
+        Gitlab = ""
+        Youtubelegacy = ""
+        Youtubecustom = ""
+        Youtubechannel = ""
+        Tumblr = ""
+        Quora = ""
+        Keybase = ""
+        Pinterest = ""
+        Reddit = ""
+        Codepen = ""
+        FreeCodeCamp = ""
+        Bitbucket = ""
+        Stackoverflow = ""
+        Weibo = ""
+        Odnoklassniki = ""
+        VK = ""
+        Flickr = ""
+        Xing = "Maik_Michel2"
+        Snapchat = ""
+        Soundcloud = ""
+        Spotify = ""
+        Bandcamp = ""
+        Paypal = ""
+        Fivehundredpx = ""
+        Mix = ""
+        Goodreads = ""
+        Lastfm = ""
+        Foursquare = ""
+        Hackernews = ""
+        Kickstarter = ""
+        Patreon = ""
+        Steam = ""
+        Twitch = ""
+        Strava = ""
+        Skype = ""
+        Whatsapp = ""
+        Zhihu = ""
+        Douban = ""
+        Angellist = ""
+        Slidershare = ""
+        Jsfiddle = ""
+        Deviantart = ""
+        Behance = ""
+        Dribbble = ""
+        Wordpress = ""
+        Vine = ""
+        Googlescholar = ""
+        Researchgate = ""
+        Thingiverse = ""
+        Devto = ""
+        Gitea = ""
+        XMPP = ""
+        Matrix = ""
+        Bilibili = ""
+        Email = "maik.michel@micodify.de"
+        RSS = true
+        [languages.en.params.social.Mastodon]
+          id = "@xxxx"
+          prefix = "https://mastodon.technology/"
 
-[[languages.en.menu.main]]
-identifier = "tags"
-pre = ""
-name = "Tags"
-url = "/tags/"
-title = ""
-weight = 2
+  [languages.de]
+    weight = 3
+    # language code
+    languageCode = "de"
+    # language name
+    languageName = "Deutsch"
+    # whether to include Chinese/Japanese/Korean
+    hasCJKLanguage = false
+    # default amount of posts in each pages
+    paginate = 12
+    # [UA-XXXXXXXX-X] google analytics code
+    googleAnalytics = "UA-115086311-1"
+    # copyright description used only for seo schema
+    copyright = "This work is licensed under MIT"
+    # Menu config
+    [languages.de.menu]
+      [[languages.de.menu.main]]
+        identifier = "posts"
+        pre = ""
+        post = ""
+        name = "Beiträge"
+        url = "/posts/"
+        title = ""
+        weight = 1
+      [[languages.de.menu.main]]
+        identifier = "tags"
+        pre = ""
+        post = ""
+        name = "Stichwörter"
+        url = "/tags/"
+        title = ""
+        weight = 2
+      [[languages.de.menu.main]]
+        identifier = "categories"
+        pre = ""
+        post = ""
+        name = "Kategorien"
+        url = "/categories/"
+        title = ""
+        weight = 3
+      [[languages.de.menu.main]]
+        identifier = "about"
+        pre = ""
+        name = "Über mich"
+        url = "/about/"
+        title = ""
+        weight = 4
+      
+    [languages.de.params]
+      # site description
+      description = "micodify - Entwicklerblog rund um Oracle APEX, JavaScript und mehr"
+      # site keywords
+      keywords = ["Blog", "Development", "APEX", "Oracle APEX", "JavaScript", "Tooling"]
+      # App icon config
+      # site default theme ("light", "dark", "auto")
+      defaultTheme = "auto"
 
-[[languages.en.menu.main]]
-identifier = "categories"
-pre = ""
-name = "Categories"
-url = "/categories/"
-title = ""
-weight = 3
-
-
-[[languages.en.menu.main]]
-identifier = "about"
-pre = ""
-name = "About"
-url = "/about/"
-title = ""
-weight = 4
-
-
-[languages.en.params]
-# site description
-description = "micodify - developer blog about Oracle APEX, JavaScript and Tooling"
-# site keywords
-keywords = ["Blog", "Development", "APEX", "Oracle APEX", "JavaScript", "Tooling"]
-# site default theme ("light", "dark", "auto")
-defaultTheme = "auto"
-
-# Home Page Info
-[languages.en.params.home]
-
-# Home Page Profile
-[languages.en.params.home.profile]
-enable = true
-# Gravatar Email for preferred avatar in home page
-gravatarEmail = ""
-# URL of avatar shown in home page
-avatarURL = "/images/avatar2.png"
-# subtitle shown in home page
-subtitle = "micodify - developer blog about Oracle APEX, JavaScript and more"
-# whether to use typeit animation for subtitle
-typeit = true
-# whether to show social links
-social = true
-
-# Home Page Posts
-[languages.en.params.home.posts]
-enable = true
-# special amount of posts in each home posts page
-paginate = 6
-# default behavior when you don't set "hiddenFromHomePage" in front matter
-defaultHiddenFromHomePage = false
-
-# Social Info in home page
-[languages.en.params.social]
-GitHub = "MaikMichel"
-Linkedin = "maik-michel"
-Twitter = "Maik__Michel"
-# Instagram = "xxxx"
-Email = "c-o-n-t-a-c-t@micodify.de"
-# Facebook = ""
-# Telegram = ""
-# Medium = "xxxx"
-# Gitlab = "xxxx"
-# Youtubelegacy = ""
-
-# Youtubecustom = "xxxx"
-# Youtubechannel = "xxxx"
-# Tumblr ="xxxx"
-# Quora = "xxxx"
-# Keybase = "xxxx"
-# Pinterest = "xxxx"
-# Reddit = "xxxx"
-# Codepen = "xxxx"
-# FreeCodeCamp = "xxxx"
-# Bitbucket = "xxxx"
-# Stackoverflow = "xxxx"
-# Weibo = "xxxx"
-# Odnoklassniki = "xxxx"
-# VK = "xxxx"
-# Flickr = "xxxx"
-Xing = "Maik_Michel2"
-# Snapchat = "xxxx"
-# Soundcloud = "xxxx"
-# Spotify = "xxxx"
-# Bandcamp = "xxxx"
-# Paypal = "xxxx"
-# Fivehundredpx = "xxxx"
-# Mix = "xxxx"
-# Goodreads = "xxxx"
-# Lastfm = "xxxx"
-# Foursquare = "xxxx"
-# Hackernews = "xxxx"
-# Kickstarter = "xxxx"
-# Patreon = "xxxx"
-# Steam = "xxxx"
-# Twitch = "xxxx"
-# Strava = "xxxx"
-# Skype = "xxxx"
-# Whatsapp = "xxxx"
-# Zhihu = "xxxx"
-# Douban = "xxxx"
-# Angellist = "xxxx"
-# Slidershare = "xxxx"
-# Jsfiddle = "xxxx"
-# Deviantart = "xxxx"
-# Behance = "xxxx"
-# Dribble = "xxxx"
-# Wordpress = "xxxx"
-# Vine = "xxxx"
-# Googlescholar = "xxxx"
-# Researchgate = "xxxx"
-# Mastodon = "xxxx"
-# MastodonPrefix = "https://mastodon.technology/"
-# Thingiverse = "xxxx"
-# Devto = "xxxx"
-# Gitea = "xxxx"
-# XMPP = "xxxx"
-# Matrix = "xxxx"
-# Bilibili = "xxxx"
-# Social Share Links in post page
-[languages.en.params.share]
-enable = true
-Twitter = true
-Facebook = true
-Linkedin = true
-Whatsapp = true
-Pinterest = true
-# Tumblr = true
-# HackerNews = true
-
-Reddit = true
-# VK = true
-# Buffer = true
-Xing = true
-# Line = true
-# Instapaper = true
-# Pocket = true
-# Digg = true
-# Stumbleupon = true
-# Flipboard = true
-# Weibo = true
-# Renren = true
-# Myspace = true
-# Blogger = true
-# Baidu = true
-# Odnoklassniki = true
-# Evernote = true
-# Skype = true
-# Trello = true
-# Mix = true
-# Comment Config
-[languages.en.params.comment]
-enable = true
-
-# Disqus Comment Config (https://disqus.com/)
-[languages.en.params.comment.disqus]
-# Disqus shortname to use Disqus in posts
-shortname = "maikmichel"
-
-# Gitalk Comment Config (https://github.com/gitalk/gitalk)
-[languages.en.params.comment.gitalk]
-owner = ""
-repo = ""
-clientId = ""
-clientSecret = ""
-
-# Valine Comment Config (https://github.com/xCss/Valine)
-[languages.en.params.comment.valine]
-enable = true
-appId = "QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI"
-appKey = "WBmoGyJtbqUswvfLh6L8iEBr"
-placeholder = "Your comment ..."
-notify = false
-verify = true
-avatar = "mp"
-meta = ""
-pageSize = 10
-lang = "en"
-visitor = true
-recordIP = true
-
-# Facebook Comment Config (https://developers.facebook.com/docs/plugins/comments)
-[languages.en.params.comment.facebook]
-enable = false
-width = "100%"
-numPosts = 10
-appId = ""
-languageCode = "en_US"
-
-[languages.en.params.footer]
-# license info (HTML format is allowed)
-license = '<a rel="license nofollow noopener noreffer" href="/impressum">Privacy and Policy</a>'
-
-
-[languages.de]
-# language code
-languageCode = "de"
-title = "micodify"
-languageName = "Deutsch"
-# whether to include Chinese/Japanese/Korean
-hasCJKLanguage = false
-# default amount of posts in each pages
-paginate = 12
-# [UA-XXXXXXXX-X] google analytics code
-googleAnalytics = ""
-# copyright description used only for seo schema
-copyright = "This work is licensed under MIT"
-# date format
-dateFormatToUse = "01-02-2006"
-
-# Menu Info
-[languages.de.menu]
-
-[[languages.de.menu.main]]
-identifier = "posts"
-# you can add extra information before the name (HTML format is allowed), such as icons
-pre = ""
-name = "Beiträge"
-url = "/posts/"
-# title will be shown when you hover on this menu link.
-title = ""
-weight = 1
-
-[[languages.de.menu.main]]
-identifier = "tags"
-pre = ""
-name = "Stichwörter"
-url = "/tags/"
-title = ""
-weight = 2
-
-[[languages.de.menu.main]]
-identifier = "categories"
-pre = ""
-name = "Kategorien"
-url = "/categories/"
-title = ""
-weight = 3
-
-[[languages.de.menu.main]]
-identifier = "about"
-pre = ""
-name = "Über mich"
-url = "/about/"
-title = ""
-weight = 4
-
-
-[languages.de.params]
-# site description
-description = "micodify - Entwicklerblog rund um Oracle APEX, JavaScript und mehr"
-# site keywords
-keywords = ["Blog", "Development", "APEX", "Oracle APEX", "JavaScript", "Tooling"]
-# site default theme ("light", "dark", "auto")
-defaultTheme = "auto"
-
-# Home Page Info
-[languages.de.params.home]
-
-# Home Page Profile
-[languages.de.params.home.profile]
-enable = true
-# Gravatar Email for preferred avatar in home page
-gravatarEmail = ""
-# URL of avatar shown in home page
-avatarURL = "/images/avatar2.png"
-# subtitle shown in home page
-subtitle = "micodify - Entwicklerblog rund um Oracle APEX, JavaScript und mehr"
-# whether to use typeit animation for subtitle
-typeit = true
-# whether to show social links
-social = true
-
-# Home Page Posts
-[languages.de.params.home.posts]
-enable = true
-# special amount of posts in each home posts page
-paginate = 6
-# default behavior when you don't set "hiddenFromHomePage" in front matter
-defaultHiddenFromHomePage = false
-
-# Social Info in home page
-[languages.de.params.social]
-GitHub = "MaikMichel"
-Linkedin = "maik-michel"
-Twitter = "Maik__Michel"
-# Instagram = ""
-Email = "c-o-n-t-a-c-t@micodify.de"
-# Facebook = ""
-# Telegram = ""
-# Medium = "xxxx"
-# Gitlab = "xxxx"
-# Youtubelegacy = ""
-
-# Youtubecustom = "xxxx"
-# Youtubechannel = "xxxx"
-# Tumblr ="xxxx"
-# Quora = "xxxx"
-# Keybase = "xxxx"
-# Pinterest = "xxxx"
-# Reddit = "xxxx"
-# Codepen = "xxxx"
-# FreeCodeCamp = "xxxx"
-# Bitbucket = "xxxx"
-# Stackoverflow = "xxxx"
-# Weibo = "xxxx"
-# Odnoklassniki = "xxxx"
-# VK = "xxxx"
-# Flickr = "xxxx"
-Xing = "Maik_Michel2"
-# Snapchat = "xxxx"
-# Soundcloud = "xxxx"
-# Spotify = "xxxx"
-# Bandcamp = "xxxx"
-# Paypal = "xxxx"
-# Fivehundredpx = "xxxx"
-# Mix = "xxxx"
-# Goodreads = "xxxx"
-# Lastfm = "xxxx"
-# Foursquare = "xxxx"
-# Hackernews = "xxxx"
-# Kickstarter = "xxxx"
-# Patreon = "xxxx"
-# Steam = "xxxx"
-# Twitch = "xxxx"
-# Strava = "xxxx"
-# Skype = "xxxx"
-# Whatsapp = "xxxx"
-# Zhihu = "xxxx"
-# Douban = "xxxx"
-# Angellist = "xxxx"
-# Slidershare = "xxxx"
-# Jsfiddle = "xxxx"
-# Deviantart = "xxxx"
-# Behance = "xxxx"
-# Dribble = "xxxx"
-# Wordpress = "xxxx"
-# Vine = "xxxx"
-# Googlescholar = "xxxx"
-# Researchgate = "xxxx"
-# Mastodon = "xxxx"
-# MastodonPrefix = "https://mastodon.technology/"
-# Thingiverse = "xxxx"
-# Devto = "xxxx"
-# Gitea = "xxxx"
-# XMPP = "xxxx"
-# Matrix = "xxxx"
-# Bilibili = "xxxx"
-# Social Share Links in post page
-[languages.de.params.share]
-enable = true
-Twitter = true
-Facebook = true
-Linkedin = true
-Whatsapp = true
-Pinterest = true
-# Tumblr = true
-# HackerNews = true
-
-Reddit = true
-# VK = true
-# Buffer = true
-Xing = true
-# Line = true
-# Instapaper = true
-# Pocket = true
-# Digg = true
-# Stumbleupon = true
-# Flipboard = true
-# Weibo = true
-# Renren = true
-# Myspace = true
-# Blogger = true
-# Baidu = true
-# Odnoklassniki = true
-# Evernote = true
-# Skype = true
-# Trello = true
-# Mix = true
-# Comment Config
-[languages.de.params.comment]
-enable = true
-
-# Disqus Comment Config (https://disqus.com/)
-[languages.de.params.comment.disqus]
-# Disqus shortname to use Disqus in posts
-shortname = "maikmichel"
-
-# Gitalk Comment Config (https://github.com/gitalk/gitalk)
-[languages.de.params.comment.gitalk]
-owner = ""
-repo = ""
-clientId = ""
-clientSecret = ""
-
-# Valine Comment Config (https://github.com/xCss/Valine)
-[languages.de.params.comment.valine]
-enable = true
-appId = "QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI"
-appKey = "WBmoGyJtbqUswvfLh6L8iEBr"
-placeholder = "Your comment ..."
-notify = false
-verify = true
-avatar = "mp"
-meta = ""
-pageSize = 10
-lang = "en"
-visitor = true
-recordIP = true
-
-# Facebook Comment Config (https://developers.facebook.com/docs/plugins/comments)
-[languages.de.params.comment.facebook]
-enable = false
-width = "100%"
-numPosts = 10
-appId = ""
-languageCode = "en_US"
-
-[languages.de.params.footer]
-# license info (HTML format is allowed)
-license = '<a rel="license nofollow noopener noreffer" href="/impressum">Impressum und Datenschutzerklärung</a>'
-
+      [languages.de.params.app]
+        # optional site title override for the app when added to an iOS home screen or Android launcher
+        title = "micodify"
+        # whether to omit favicon resource links
+        noFavicon = false
+        # modern SVG favicon to use in place of older style .png and .ico files
+        svgFavicon = ""
+        # Android browser theme color
+        themeColor = "#ffffff"
+        # Safari mask icon color
+        iconColor = "#5bbad5"
+        # Windows v8-10 tile color
+        tileColor = "#da532c"
+      # Search config
+      [languages.de.params.search]
+        enable = true
+        # type of search engine ("lunr", "algolia")
+        type = "algolia"
+        # max index length of the chunked content
+        contentLength = 4000
+        # placeholder of the search bar
+        placeholder = ""
+        # max number of results length
+        maxResultLength = 10
+        # snippet length of the result
+        snippetLength = 30
+        # HTML tag name of the highlight part in results
+        highlightTag = "em"
+        # whether to use the absolute URL based on the baseURL in search index
+        absoluteURL = false
+        [languages.de.params.search.algolia]
+          index = "index.de"
+          appID = "PASDMWALPK"
+          searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+      # Home page config
+      [languages.de.params.home]
+        # amount of RSS pages
+        rss = 10
+        # Home page profile
+        [languages.de.params.home.profile]
+          enable = true
+          # Gravatar Email for preferred avatar in home page
+          gravatarEmail = ""
+          # URL of avatar shown in home page
+          avatarURL = "/images/avatar2.png"
+          # title shown in home page (HTML format is supported)
+          title = "micodify"
+          # subtitle shown in home page
+          subtitle = "micodify - Entwicklerblog rund um Oracle APEX, JavaScript und mehr"
+          # whether to use typeit animation for subtitle
+          typeit = true
+          # whether to show social links
+          social = true
+          # disclaimer (HTML format is supported)
+          disclaimer = ""
+        # Home page posts
+        [languages.de.params.home.posts]
+          enable = true
+          # special amount of posts in each home posts page
+          paginate = 6
+      # Social config in home page
+      [languages.de.params.social]
+        GitHub = "MaikMichel"
+        Linkedin = "maik-michel"
+        Twitter = "Maik__Michel"
+        Instagram = ""
+        Facebook = ""
+        Telegram = "MaikMichel"
+        Medium = ""
+        Gitlab = ""
+        Youtubelegacy = ""
+        Youtubecustom = ""
+        Youtubechannel = ""
+        Tumblr = ""
+        Quora = ""
+        Keybase = ""
+        Pinterest = ""
+        Reddit = ""
+        Codepen = ""
+        FreeCodeCamp = ""
+        Bitbucket = ""
+        Stackoverflow = ""
+        Weibo = ""
+        Odnoklassniki = ""
+        VK = ""
+        Flickr = ""
+        Xing = "Maik_Michel2"
+        Snapchat = ""
+        Soundcloud = ""
+        Spotify = ""
+        Bandcamp = ""
+        Paypal = ""
+        Fivehundredpx = ""
+        Mix = ""
+        Goodreads = ""
+        Lastfm = ""
+        Foursquare = ""
+        Hackernews = ""
+        Kickstarter = ""
+        Patreon = ""
+        Steam = ""
+        Twitch = ""
+        Strava = ""
+        Skype = ""
+        Whatsapp = ""
+        Zhihu = ""
+        Douban = ""
+        Angellist = ""
+        Slidershare = ""
+        Jsfiddle = ""
+        Deviantart = ""
+        Behance = ""
+        Dribbble = ""
+        Wordpress = ""
+        Vine = ""
+        Googlescholar = ""
+        Researchgate = ""
+        Mastodon = ""
+        Thingiverse = ""
+        Devto = ""
+        Gitea = ""
+        XMPP = ""
+        Matrix = ""
+        Bilibili = ""
+        Email = "maik.michel@micodify.de"
+        RSS = true
+        
 
 [params]
-# LoveIt theme version
-version = "0.1.X"
-# public git repo url only then enableGitInfo is true
-gitRepo = "https://github.com/MaikMichel/micodify"
-# which hash function used for SRI, when empty, no SRI is used ("sha256", "sha384", "sha512", "md5")
-fingerprint = ""
+  # LoveIt theme version
+  version = "0.2.X"
+  # site default theme ("light", "dark", "auto")
+  defaultTheme = "auto"
+  # public git repo url only then enableGitInfo is true
+  gitRepo = "https://github.com/dillonzq/LoveIt"
+  # which hash function used for SRI, when empty, no SRI is used ("sha256", "sha384", "sha512", "md5")
+  fingerprint = ""
+  # date format
+  dateFormat = "2006-01-02"
+  # website images for Open Graph and Twitter Cards
+  
+  images = ["/logo.png"]
 
-# Header info
-[params.header]
-# desktop header mode ("fixed", "normal", "auto")
-desktopMode = "fixed"
-# mobile header mode ("fixed", "normal", "auto")
-mobileMode = "auto"
+  # Header config
+  [params.header]
+    # desktop header mode ("fixed", "normal", "auto")
+    desktopMode = "fixed"
+    # mobile header mode ("fixed", "normal", "auto")
+    mobileMode = "auto"
+    # Header title config
+    [params.header.title]
+      # URL of the LOGO
+      logo = ""
+      # title name
+      name = "micodify"
+      # you can add extra information before the name (HTML format is supported), such as icons
+      pre = "<i class='far fa-kiss-wink-heart fa-fw'></i>"
+      # you can add extra information after the name (HTML format is supported), such as icons
+      post = ""
+      # whether to use typeit animation for title name
+      typeit = false
 
-# Footer Copyright Info
-[params.footer]
-# Site creation time
-since = 2020
+  # Footer config
+  [params.footer]
+    enable = true
+    # Custom content (HTML format is supported)
+    custom = ''
+    # whether to show Hugo and theme info
+    hugo = false
+    # whether to show copyright info
+    copyright = true
+    # whether to show the author
+    author = true
+    # site creation time
+    since = 2020
+    # ICP info only in China (HTML format is supported)
+    icp = ""
+    # license info (HTML format is supported)
+    license= ''
 
+  # Section (all posts) page config
+  [params.section]
+    # special amount of posts in each section page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "01-02"
+    # amount of RSS pages
+    rss = 10
 
-# Page config
-[params.page]
-# whether to use lightgallery in the page
-lightgallery = true
-# whether to show link to Raw Markdown content of the post
-linkToMarkdown = true
+  # List (category or tag) page config
+  [params.list]
+    # special amount of posts in each list page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "01-02"
+    # amount of RSS pages
+    rss = 10
 
-# site verification code for Google/Bing/Yandex/Pinterest/Baidu
-[params.verification]
-google = ""
-bing = ""
-yandex = ""
-pinterest = ""
-baidu = ""
+  # Page config
+  [params.page]
+    # whether to hide a page from home page
+    hiddenFromHomePage = false
+    # whether to hide a page from search results
+    hiddenFromSearch = false
+    # whether to enable twemoji
+    twemoji = false
+    # whether to enable lightgallery
+    lightgallery = false
+    # whether to enable the ruby extended syntax
+    ruby = true
+    # whether to enable the fraction extended syntax
+    fraction = true
+    # whether to enable the fontawesome extended syntax
+    fontawesome = true
+    # whether to show link to Raw Markdown content of the content
+    linkToMarkdown = true
+    # whether to show the full text content in RSS
+    rssFullText = false
+    # Table of the contents config
 
-# Publisher Info just for SEO
-[params.publisher]
-name = "micodify.de - Maik Michel"
+    [params.page.toc]
+      # whether to enable the table of the contents
+      enable = true
+      # whether to keep the static table of the contents in front of the post
+      keepStatic = false
+      # whether to make the table of the contents in the sidebar automatically collapsed
+      auto = true
+    # Code config
 
-[params.publisher.logo]
-url = "logo.png"
-width = 120
-height = 120
+    [params.page.code]
+      # whether to show the copy button of the code block
+      copy = true
+      # the maximum number of lines of displayed code by defaul
+      maxShownLines = 10
+    # KaTeX mathematical formulas config (KaTeX https://katex.org/)
+    [params.page.math]
+      enable = false
+      # default block delimiter is $$ ... $$ and \\[ ... \\]
+      blockLeftDelimiter = ""
+      blockRightDelimiter = ""
+      # default inline delimiter is $ ... $ and \\( ... \\)
+      inlineLeftDelimiter = ""
+      inlineRightDelimiter = ""
+      # KaTeX extension copy_tex
+      copyTex = true
+      # KaTeX extension mhchem
+      mhchem = true
+    # Mapbox GL JS config (Mapbox GL JS https://docs.mapbox.com/mapbox-gl-js)
+    [params.page.mapbox]
+      # access token of Mapbox GL JS
+      accessToken = "pk.eyJ1IjoiZGlsbG9uenEiLCJhIjoiY2s2czd2M2x3MDA0NjNmcGxmcjVrZmc2cyJ9.aSjv2BNuZUfARvxRYjSVZQ"
+      # style for the light theme
+      lightStyle = "mapbox://styles/mapbox/light-v10?optimize=true"
+      # style for the dark theme
+      darkStyle = "mapbox://styles/mapbox/dark-v10?optimize=true"
+      # whether to add NavigationControl (https://docs.mapbox.com/mapbox-gl-js/api/#navigationcontrol)
+      navigation = true
+      # whether to add GeolocateControl (https://docs.mapbox.com/mapbox-gl-js/api/#geolocatecontrol)
+      geolocate = true
+      # whether to add ScaleControl (https://docs.mapbox.com/mapbox-gl-js/api/#scalecontrol)
+      scale = true
+      # whether to add FullscreenControl (https://docs.mapbox.com/mapbox-gl-js/api/#fullscreencontrol)
+      fullscreen = true
+    # Social share links in post page
+    [params.page.share]
+      enable = true
+      Twitter = true
+      Facebook = true
+      Linkedin = false
+      Whatsapp = true
+      Pinterest = false
+      Tumblr = false
+      HackerNews = false
+      Reddit = false
+      VK = false
+      Buffer = true
+      Xing = true
+      Line = true
+      Instapaper = false
+      Pocket = true
+      Digg = true
+      Stumbleupon = false
+      Flipboard = false
+      Weibo = true
+      Renren = false
+      Myspace = true
+      Blogger = true
+      Baidu = false
+      Odnoklassniki = false
+      Evernote = true
+      Skype = false
+      Trello = true
+      Mix = false
+    # Comment config
+    [params.page.comment]
+      enable = true
+      # Disqus comment config (https://disqus.com/)
+      [params.page.comment.disqus]
+        enable = true
+        # Disqus shortname to use Disqus in posts
+        shortname = ""
+      # Gitalk comment config (https://github.com/gitalk/gitalk)
+      [params.page.comment.gitalk]
+        enable = false
+        owner = ""
+        repo = ""
+        clientId = ""
+        clientSecret = ""
+      # Valine comment config (https://github.com/xCss/Valine)
+      [params.page.comment.valine]
+        enable = false
+        appId = "QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI"
+        appKey = "WBmoGyJtbqUswvfLh6L8iEBr"
+        placeholder = ""
+        avatar = "mp"
+        meta= ""
+        pageSize = 10
+        lang = ""
+        visitor = true
+        recordIP = true
+        highlight = true
+        enableQQ = false
+        serverURLs = "https://leancloud.hugoloveit.com"
+        # emoji data file name, default is "google.yml"
+        # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
+        # located in "themes/LoveIt/assets/data/emoji/" directory
+        # you can store your own data files in the same path under your project:
+        # "assets/data/emoji/"
+        emoji = ""
+      # Facebook comment config (https://developers.facebook.com/docs/plugins/comments)
+      [params.page.comment.facebook]
+        enable = false
+        width = "100%"
+        numPosts = 10
+        appId = ""
+        languageCode = ""
+      # Telegram comments config (https://comments.app/)
+      [params.page.comment.telegram]
+        enable = false
+        siteID = ""
+        limit = 5
+        height = ""
+        color = ""
+        colorful = true
+        dislikes = false
+        outlined = false
+      # Commento comment config (https://commento.io/)
+      [params.page.comment.commento]
+        enable = false
+      # Utterances comment config (https://utteranc.es/)
+      [params.page.comment.utterances]
+        enable = false
+        # owner/repo
+        repo = ""
+        issueTerm = "pathname"
+        label = ""
+        lightTheme = "github-light"
+        darkTheme = "github-dark"
+    # Third-party library config
+    [params.page.library]
+      [params.page.library.css]
+        # someCSS = "some.css"
+        # located in "assets/" 位于 "assets/"
+        # Or 或者
+        # someCSS = "https://cdn.example.com/some.css"
+      [params.page.library.js]
+        # someJavascript = "some.js"
+        # located in "assets/" 位于 "assets/"
+        # Or 或者
+        # someJavascript = "https://cdn.example.com/some.js"
+    # SEO config
+    [params.page.seo]
+      # Publisher info
+      [params.page.seo.publisher]
+        name = "Maik Michel"
+        [params.page.seo.publisher.logo]
+          url = "logo.png"
+          width = 127
+          height = 40
+      # Logo info
+      [params.page.seo.logo]
+        url = "logo.png"
+        width = 127
+        height = 40
+      # Image info
+      [params.page.seo.image]
+        url = "cover.png"
+        width = 800
+        height = 600
 
-# Website Log Info just for SEO
-[params.logo]
-url = "logo.png"
-width = 120
-height = 120
+  # TypeIt config
+  [params.typeit]
+    # typing speed between each step (measured in milliseconds)
+    speed = 100
+    # blinking speed of the cursor (measured in milliseconds)
+    cursorSpeed = 1000
+    # character used for the cursor (HTML format is supported)
+    cursorChar = "|"
+    # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
+    duration = -1
 
-# Website Image Info just for SEO
-[params.image]
-url = "cover.png"
-width = 800
-height = 600
+  # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
+  [params.verification]
+    google = ""
+    bing = ""
+    yandex = ""
+    pinterest = ""
+    baidu = ""
 
-# CSS and JS Files CDN
-# CSS 和 JS 文件的 CDN 设置
-[params.cdn]
-# fontawesome-free@5.12.1 https://fontawesome.com/
-fontawesomeFreeCSS = ''
-# animate.css@3.7.2 https://github.com/daneden/animate.css
-animateCSS = ''
-# smooth-scroll@16.1.2 https://github.com/cferdinandi/smooth-scroll
-smoothScrollJS = ''
-# sharer@0.4.0 https://github.com/ellisonleao/sharer.js
-sharerJS = ''
-# lazysizes@5.2.0 https://github.com/aFarkas/lazysizes
-lazysizesJS = ''
-# lightgallery@1.1.3 lg-thumbnail@1.1.0 lg-zoom@1.1.0 https://github.com/sachinchoolur/lightgallery.js
-lightgalleryCSS = ''
-lightgalleryJS = ''
-lightgalleryThumbnailJS = ''
-lightgalleryZoomJS = ''
-# typeit@6.5.1 https://github.com/alexmacarthur/typeit
-typeitJS = ''
-# katex@0.11.1 https://github.com/KaTeX/KaTeX
-katexCSS = ''
-katexJS = ''
-katexAutoRenderJS = ''
-katexCopyTexCSS = ''
-katexCopyTexJS = ''
-katexMhchemJS = ''
-# mermaid@8.4.8 https://github.com/knsv/mermaid
-mermaidJS = ''
-# aplayer@1.10.1 https://github.com/MoePlayer/APlayer
-aplayerCSS = ''
-aplayerJS = ''
-# meting@2.0.1 https://github.com/metowolf/MetingJS
-metingJS = ''
-# echarts@4.6.0 https://echarts.apache.org/
-echartsJS = ''
-echartsMacaronsJS = ''
-# gitalk@1.6.2 https://github.com/gitalk/gitalk
-gitalkCSS = ''
-gitalkJS = ''
-# valine@1.3.10 https://valine.js.org/
-valineJS = ''
+  # Analytics config
+  [params.analytics]
+    enable = false
+    # Google Analytics
+    [params.analytics.google]
+      id = ""
+      # whether to anonymize IP
+      anonymizeIP = true
+    # Fathom Analytics
+    [params.analytics.fathom]
+      id = ""
+      # server url for your tracker if you're self hosting
+      server = ""
+
+  # Cookie consent config
+  [params.cookieconsent]
+    enable = true
+    # text strings used for Cookie consent banner
+    [params.en.cookieconsent.content]
+      message = "We use cookies to optimise site functionality and give you the best possible experience."
+      dismiss = "Got it"
+      link = "What are cookies"
+
+  # CDN config for third-party library files
+  [params.cdn]
+    # CDN data file name, disabled by default
+    # ("jsdelivr.yml")
+    # located in "themes/LoveIt/assets/data/cdn/" directory
+    # you can store your own data files in the same path under your project:
+    # "assets/data/cdn/"
+    data = "jsdelivr.yml"
+
+  # Compatibility config  
+  [params.compatibility]
+    # whether to use Polyfill.io to be compatible with older browsers
+    polyfill = true
+    # whether to use object-fit-images to be compatible with older browser
+    objectFit = true
 
 # Markup related configuration in Hugo
 [markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+  # Goldmark is from Hugo 0.60 the default library used for Markdown
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      # whether to use HTML tags directly in the document
+      unsafe = true
+  # Table Of Contents settings
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
 
-# Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
-[markup.highlight]
-codeFences = true
-guessSyntax = true
-lineNoStart = 1
-lineNos = true
-lineNumbersInTable = true
-noClasses = false
-style = "monokai"
-tabWidth = 4
-
-# Goldmark is from Hugo 0.60 the default library used for Markdown
-[markup.goldmark]
-
-[markup.goldmark.extensions]
-definitionList = true
-footnote = true
-linkify = true
-strikethrough = true
-table = true
-taskList = true
-typographer = true
-
-[markup.goldmark.renderer]
-# whether to use HTML tags directly in the document
-unsafe = true
-
-# Table Of Contents settings
-[markup.tableOfContents]
-startLevel = 2
-endLevel = 6
-
-# Author Info
+# Author config
 [author]
-name = "Maik Michel"
-link = "https://micodify.de"
+  name = "Maik Michel"
+  email = "maik.michel@micodify.de"
+  link = ""
 
-# Sitemap Info
+# Sitemap config
 [sitemap]
-changefreq = "weekly"
-filename = "sitemap.xml"
-priority = 0.5
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
 
-# Permalinks Info (https://gohugo.io/content-management/urls/#permalinks)
+# Permalinks config (https://gohugo.io/content-management/urls/#permalinks)
 [Permalinks]
-# posts = ":year/:month/:filename"
-posts = ":filename"
+  # posts = ":year/:month/:filename"
+  posts = ":filename"
 
-# Privacy Info (https://gohugo.io/about/hugo-and-gdpr/)
+# Privacy config (https://gohugo.io/about/hugo-and-gdpr/)
 [privacy]
-
-[privacy.googleAnalytics]
-anonymizeIP = true
-
-[privacy.youtube]
-privacyEnhanced = true
+  # privacy of the Google Analytics (replaced by params.analytics.google)
+  [privacy.googleAnalytics]
+    # ...
+  [privacy.twitter]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true
 
 # Options to make output .md files
 [mediaTypes]
-
-[mediaTypes."text/plain"]
-suffixes = ["md"]
+  [mediaTypes."text/plain"]
+    suffixes = ["md"]
 
 # Options to make output .md files
 [outputFormats.MarkDown]
-mediaType = "text/plain"
-isPlainText = true
-isHTML = false
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
 
 # Options to make hugo output files
 [outputs]
-home = ["HTML", "RSS"]
-page = ["HTML", "MarkDown"]
-section = ["HTML", "RSS"]
-taxonomy = ["HTML", "RSS"]
-taxonomyTerm = ["HTML"]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML"]

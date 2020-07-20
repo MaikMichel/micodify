@@ -3,13 +3,10 @@ title: "Arraylike Functions in PL/SQL"
 date: 2019-08-01T21:11:15+02:00
 lastmod: 2019-08-01T21:11:15+02:00
 draft: false
-author: ""
-authorLink: ""
 description: ""
-license: ""
 
-tags: []
-categories: []
+tags: ["plsql", "tipps"]
+categories: ["PLSQL"]
 hiddenFromHomePage: false
 
 featuredImage: "/images/array-like-functions/array-like-functions.jpg"

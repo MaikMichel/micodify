@@ -6,7 +6,7 @@ draft: false
 description: "Was isn das"
 
 tags: ["Forms", "Oracle", "Microsoft", "Excel", COM"]
-categories: []
+categories: ["Oracle Forms"]
 hiddenFromHomePage: false
 
 featuredImage: "/images/excel-com-automation/excel_splash.jpg"
