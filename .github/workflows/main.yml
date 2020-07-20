@@ -25,31 +25,12 @@ jobs:
       uses: actions/checkout@master
       
     - name: Hugo setup
-      uses: peaceiris/actions-hugo@v2.4.12
-      with:
-        # The Hugo version to download (if necessary) and use. Example: 0.58.2
-        hugo-version: # optional, default is latest
-        # Download (if necessary) and use Hugo extended version. Example: true
-        extended: # optional, default is false
+      uses: peaceiris/actions-hugo@v2.4.12    
       
     - name: GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.1.1
       with:
-        # GitHub repository where assets will be deployed (default current)
-        repo: # optional
-        # Git branch where assets will be deployed
-        target_branch: # optional, default is gh-pages
-        # Create incremental commit instead of doing push force
-        keep_history: # optional, default is false
-        # Allow an empty commit to be created
-        allow_empty_commit: # optional, default is true
         # Build directory to deploy
         build_dir: public
-        # The committer name and email address
-        committer: # optional
-        # The author name and email address
-        author: # optional
-        # Commit message
-        commit_message: # optional
-        # Write the given domain name to the CNAME file
-        fqdn: # optional
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
