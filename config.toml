@@ -1,4 +1,4 @@
-baseURL = "https://micodify.de"
+baseURL = "https://maikmichel.github.io/micodify"
 # [en, zh-cn, fr, pl, ...] determines default content language
 defaultContentLanguage = "en"
 # theme
