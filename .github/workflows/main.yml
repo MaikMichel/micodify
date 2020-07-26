@@ -44,3 +44,17 @@ jobs:
         publish_dir: ./public
         allow_empty_commit: true
         force_orphan: true
+
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      with:
+        # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
+        ftp-server: ftp://${{ secrets.FTP_SERVER }}
+        # FTP account username
+        ftp-username: ${{ secrets.FTP_USER }}
+        # FTP account password
+        ftp-password: ${{ secrets.FTP_PWD }}
+        # The local folder to copy, defaults to root project folder
+        local-dir: ./public
+        # Passes through options into git-ftp
+        #git-ftp-args: # optional
