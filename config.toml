@@ -106,9 +106,9 @@ title = "micodify"
         # whether to use the absolute URL based on the baseURL in search index
         absoluteURL = false
         [languages.en.params.search.algolia]
-          index = "index.en"
-          appID = "PASDMWALPK"
-          searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+          index = "micodify.en"
+          appID = "QGFD6WMOLN"
+          searchKey = "6cc5767b1d1b1a4c8f89b4a4acbddbfb"
       # Home page config
       [languages.en.params.home]
         # amount of RSS pages
@@ -292,9 +292,9 @@ title = "micodify"
         # whether to use the absolute URL based on the baseURL in search index
         absoluteURL = false
         [languages.de.params.search.algolia]
-          index = "index.de"
-          appID = "PASDMWALPK"
-          searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+          index = "micodify.de"
+          appID = "QGFD6WMOLN"
+          searchKey = "6cc5767b1d1b1a4c8f89b4a4acbddbfb"
       # Home page config
       [languages.de.params.home]
         # amount of RSS pages
