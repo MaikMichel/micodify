@@ -1,7 +1,7 @@
 +++
 autoCollapseToc = false
 categories = []
-comment = false
+comment = true
 date = 2020-08-30T22:00:00Z
 description = "test desc"
 draft = true
@@ -16,7 +16,7 @@ tags = []
 title = "test"
 toc = false
 [share]
-enable = false
+enable = true
 
 +++
 Here is text
