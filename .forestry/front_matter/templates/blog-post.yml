@@ -54,3 +54,5 @@ fields:
 - type: boolean
   name: comment
   label: comment
+pages:
+- content/posts/test.md
