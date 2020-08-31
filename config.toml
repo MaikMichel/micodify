@@ -395,7 +395,7 @@ title = "micodify"
   # site default theme ("light", "dark", "auto")
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
-  gitRepo = "https://github.com/dillonzq/LoveIt"
+  gitRepo = "https://github.com/MaikMichel/micodify"
   # which hash function used for SRI, when empty, no SRI is used ("sha256", "sha384", "sha512", "md5")
   fingerprint = ""
   # date format
@@ -599,7 +599,7 @@ title = "micodify"
         languageCode = ""
       # Telegram comments config (https://comments.app/)
       [params.page.comment.telegram]
-        enable = true
+        enable = false
         siteID = ""
         limit = 5
         height = ""
