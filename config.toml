@@ -1,4 +1,4 @@
-baseURL = "https://micodify.netlify.app"
+baseURL = "https://micodify.de"
 # [en, zh-cn, fr, pl, ...] determines default content language
 defaultContentLanguage = "en"
 # theme
