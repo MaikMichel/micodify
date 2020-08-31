@@ -200,9 +200,9 @@ title = "micodify"
         Bilibili = ""
         Email = "maik.michel@micodify.de"
         RSS = true
-        [languages.en.params.social.Mastodon]
-          id = "@xxxx"
-          prefix = "https://mastodon.technology/"
+        #[languages.en.params.social.Mastodon]
+        #  id = "@xxxx"
+        #  prefix = "https://mastodon.technology/"
 
   [languages.de]
     weight = 3
