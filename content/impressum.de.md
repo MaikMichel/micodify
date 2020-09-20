@@ -21,8 +21,8 @@ math: false
 lightgallery: true
 linkToMarkdown: true
 share:
-  enable: true
-comment: true
+  enable: false
+comment: false
 
 ---
 

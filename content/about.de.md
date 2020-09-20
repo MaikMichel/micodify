@@ -8,6 +8,7 @@ featuredImage: "/images/about/about.me.jpg"
 featuredImagePreview: ""
 
 lightgallery: true
+comment: true
 ---
 
 ![Mein Sohn un ich](/images/about/about.me.jpg "Mein Sohn und ich")

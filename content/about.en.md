@@ -8,6 +8,7 @@ featuredImage: "/images/about/about.me.jpg"
 featuredImagePreview: ""
 
 lightgallery: true
+comment: true
 ---
 
 ![me with my son](/images/about/about.me.jpg "Me with my son")
